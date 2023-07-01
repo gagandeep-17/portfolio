@@ -1,0 +1,422 @@
+<html>
+<head>
+  <title>PET ADOPTION CENTER</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .profile-logo {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .search-bar {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-bar button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    nav ul li {
+      float: left;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      background-color: #111;
+    }
+
+    .hero {
+      background-image: url("hero.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-top: 20px;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #111;
+    }
+
+    .features {
+      background-color: #f4f4f4;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .features h2 {
+      margin: 0;
+    }
+
+    .feature {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .feature i {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .feature h3 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .feature p {
+      color: #888;
+    }
+
+    .pets {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .pets h2 {
+      margin: 0;
+    }
+
+    .pet {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 20px;
+      width: 300px;
+    }
+
+    .pet img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .pet h3 {
+      margin: 0;
+    }
+
+    .pet p {
+      color: #888;
+    }
+
+    .cats {
+      background-color: #f4f4f4;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .cats h2 {
+      margin: 0;
+    }
+
+    .cat {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .cat img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .cat h3 {
+      margin: 0;
+    }
+
+    .cat p {
+      color: #888;
+    }
+
+    .birds {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .birds h2 {
+      margin: 0;
+    }
+
+    .bird {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 20px;
+      width: 300px;
+    }
+
+    .bird img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .bird h3 {
+      margin: 0;
+    }
+
+    .bird p {
+      color: #888;
+    }
+
+    .follow-us {
+      background-color: #333;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .follow-us h2 {
+      color: #fff;
+      margin: 0;
+    }
+
+    .social-icons a {
+      color: #fff;
+      font-size: 24px;
+      margin: 0 10px;
+    }
+
+    .get-started {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .get-started h2 {
+      margin: 0;
+    }
+
+    .get-started p {
+      color: #888;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Furry Friends Pet Center</h1>
+    <div class="profile-logo">
+      <i class="fa fa-user-circle"></i>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button><i class="fa fa-search"></i></button>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Cat's</a></li>
+      <li><a href="#">Dog's</a></li>
+      <li><a href="#">Donate</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+ 
+
+  <div class="features">
+    <h2>Bring home a pet &<br> invite Happiness into your life</h2>
+    <div class="feature">
+      <i class="fa fa-map-marker"></i>
+      <h3>location</h3>
+      <p>Furry Friends Pet Center,near<br>SVCE,Banglore.</p>
+    </div>
+    <div class="feature">
+      <i class="fa fa-heart"></i>
+      <h3>Make Memories</h3> 
+      <p>  Thinking about adopting a pet?<br> #Adoption can change your life
+      </p>
+    </div>
+    <div class="feature">
+      <i class="fa fa-briefcase"></i>
+      <h3>Pet foods</h3>
+      <p>"He who feeds a hungry animal<br>feeds his own soul"</p>
+    </div>
+  </div>
+
+  <div class="pets">
+    <h2>PUPPY'S NEAR YOUR LOCATION</h2>
+    <div class="pet">
+      <img src="Lucy.jpg" alt="pet 1">
+      <h3>LUCY</h3>
+      <p>Age-2.5 months<br>
+        Breed Name-Indie<br>
+        City-Bangalore.</p>
+    </div>
+    <div class="pet">
+      <img src="Coco.jpg" alt="pet 2">
+      <h3>COCO</h3>
+      <p>Age-1 month<br>
+        Breed Name-Indian Mongreal<br>
+        City-Banglore.</p>
+    </div>
+    <div class="pet">
+      <img src="Ruby.webp" alt="pet 3">
+      <h3>RUBY</h3>
+      <p>Age-2 months<br>
+        Breed Name-Indie<br>
+        City-Bangalore.</p>
+    </div>
+  </div>
+
+  <div class="cats">
+    <h2>KITTEN'S NEAR YOUR LOCATION </h2>
+    <div class="cat">
+      <img src="Molly.webp" alt="cat 1">
+      <h3>MOLLY</h3>
+      <p>Age-2 month<br>
+        Breed Name-Siamese cat <br>
+        City-Banglore.</p>
+    </div>
+    <div class="cat">
+      <img src="Rocky.webp" alt="cat 2">
+      <h3>ROCKY</h3>
+      <p>Age-1.5 month<br>
+        Breed Name-Persian cat<br>
+        City-Banglore.</p>
+    </div>
+    <div class="cat">
+      <img src="Jerry.jpg" alt="cat 3">
+      <h3>JERRY</h3>
+      <p>Age-1 month<br>
+        Breed Name-Black footed cat<br>
+        City-Banglore.</p>
+    </div>
+  </div>
+
+  <div class="birds">
+    <h2>BIRD'S NEAR YOUR LOCATION </h2>
+    <div class="bird">
+      <img src="Luna.jpg" alt="bird 1">
+      <h3>LUNA</h3>
+      <p>Age-6 month<br>
+        Breed Name-Song parrot<br>
+        City-Banglore</p>
+    </div>
+    <div class="bird">
+      <img src="Kiwi.jpg" alt="bird 2">
+      <h3>KIWI</h3>
+      <p>Age-4 month<br>
+        Breed Name-Grey parrot<br>
+        City-Banglore</p>
+    </div>
+    <div class="bird">
+      <img src="Daisy.jpg" alt="bird 3">
+      <h3>DAISY</h3>
+      <p>Age-7 month<br>
+        Breed Name-Macaw<br>
+        City-Banglore</p>
+    </div>
+  </div>
+
+  <div class="follow-us">
+    <h2>Follow Us</h2>
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div class="get-started">
+    <h2>FIND YOUR HAPPINESS</h2>
+    <p>An animal's eyes have the power to speak a great language.</p>
+    <a href="#" class="btn">Adopt now</a>
+  </div>
+
+  <footer>
+    <p>&copy; Your Pet,Our Passion .</p>
+  </footer>
+</body>
+
+</html>
